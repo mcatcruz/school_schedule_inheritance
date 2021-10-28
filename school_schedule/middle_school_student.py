@@ -1,6 +1,7 @@
 from .student import Student
 
 # add MiddleSchoolStudent here
+# MiddleSchoolStudent is a child of Student
 class MiddleSchoolStudent(Student):
     def __init__(self, name, grade, classes, gets_transportation=False):
         super().__init__(name, grade, classes) 

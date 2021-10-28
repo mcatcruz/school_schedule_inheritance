@@ -1,3 +1,5 @@
+# Student is a parent class
+# Student is also a component of cohort
 class Student:
     def __init__(self, name, grade, classes):
         self.name = name

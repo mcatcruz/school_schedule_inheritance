@@ -1,5 +1,6 @@
 from .student import Student
 
+# HighSchoolStudent is a child of Student
 class HighSchoolStudent(Student):
     def __init__(self, name, grade, classes,
         has_parking_privileges=False, clubs=None):

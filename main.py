@@ -1,7 +1,7 @@
 from school_schedule.student import Student
 from school_schedule.high_school_student import HighSchoolStudent
-
-# first instance
+from school_schedule.cohort import Cohort
+# first instance using Student parent class
 quinn = Student(
                 "Quinn", 
                 "junior", 
@@ -17,7 +17,7 @@ quinn = Student(
 
 quinn.add_class("Painting")
 
-# second instance
+# second instance using HighSchoolStudent child class
 claire = HighSchoolStudent(
                 "Claire", 
                 "freshmen", 
@@ -36,3 +36,6 @@ claire = HighSchoolStudent(
 students = [quinn, claire]
 for student in students:
     print(student.summary())
+
+cohort = Cohort("Maple")
+print(cohort.student_summaries())
